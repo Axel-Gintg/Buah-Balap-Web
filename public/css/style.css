@@ -1,0 +1,235 @@
+trix-toolbar [data-trix-button-group="file-tools"] {
+    display: none;
+}
+
+.trix-button--icon-undo {
+    display: none !important;
+}
+
+.trix-button--icon-redo {
+    display: none !important;
+}
+
+img.tengah {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.st-color {
+    background-color: #2E7D18;
+    color: white;
+}
+
+.garis {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #2E7D18;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.datepicker {
+    font-size: 13px;
+}
+
+.see-more:hover {
+    color: black;
+}
+
+.font-card-header {
+    font-size: 20px;
+}
+
+.btn-style {
+    color: #fff !important;
+    background-color: #2E7D18 !important;
+    border-color: #2E7D18 !important;
+}
+
+.text-style {
+    color: #0b3005 !important;
+}
+
+a.text-style:hover,
+a.text-style:focus {
+    color: #224abe !important;
+}
+
+.border-top-primary {
+    border-top: 0.25rem solid #2E7D18 !important;
+}
+
+.border-left-primary {
+    border-left: 0.3rem solid #2E7D18 !important;
+}
+
+#main {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    color: black !important;
+}
+#main td {
+    text-align: left;
+    padding: 5px 8px 5px 8px;
+    border: 1px solid black;
+}
+#main {
+    border-collapse: collapse;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+.rating > label {
+    display: inline-block;
+    padding: 5px;
+}
+.rating > input {
+    display: none;
+}
+.rating > label:before {
+    content: "\2605";
+    font-size: 25px;
+    cursor: pointer;
+}
+.rating > input:checked ~ label:before {
+    content: "\2605";
+    color: orange;
+}
+
+/* Branding Colors */
+.bg-dark-green { background: #184A2C !important; }
+.text-yellow { color: #FFD600 !important; }
+.text-dark-brown { color: #4E342E !important; }
+.btn-success, .modern-btn-cart { background: #184A2C; color: #fff; border: none; }
+.btn-success:hover, .modern-btn-cart:hover { background: #FF9900; color: #fff; }
+.promo-bar { background: #184A2C; color: #FFD600; font-weight: 600; font-size: 0.98rem; letter-spacing: 0.5px; }
+.promo-banner { background: #184A2C; color: #fff; border-radius: 18px; }
+.promo-banner .promo-btn { background: #FFD600; color: #184A2C; border-radius: 24px; font-weight: 600; }
+.promo-banner .promo-btn:hover { background: #FF9900; color: #fff; }
+.filter-bar select, .filter-bar .form-control { border-radius: 18px; border: 1px solid #e0e0e0; }
+.modern-badge { background: #FF9900; color: #fff; border-radius: 8px; font-weight: 600; font-size: 0.85rem; }
+.modern-badge.best-sale { background: #D7263D; }
+.modern-rating { color: #FFD600; font-size: 1rem; }
+.modern-card:hover { box-shadow: 0 8px 32px rgba(24,74,44,0.13); transform: translateY(-4px) scale(1.03); }
+
+/* Animasi Fade-in dan Slide-up */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up { animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) both; }
+
+/* Hover Card Animations */
+.modern-card { transition: box-shadow 0.2s, transform 0.2s; }
+.modern-card:hover { box-shadow: 0 12px 32px rgba(24,74,44,0.18); transform: translateY(-8px) scale(1.04); }
+.modern-card-img { transition: transform 0.3s; }
+.modern-card:hover .modern-card-img { transform: scale(1.08) rotate(-2deg); }
+
+/* Button Glow & Ripple */
+.promo-btn, .modern-btn-cart, .btn-success {
+  box-shadow: 0 0 0 rgba(255,214,0,0.7);
+  transition: box-shadow 0.2s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.promo-btn:hover, .modern-btn-cart:hover, .btn-success:hover {
+  box-shadow: 0 0 16px 2px #FFD60099;
+}
+
+/* Banner Swing Animation */
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(6deg); }
+  40% { transform: rotate(-4deg); }
+  60% { transform: rotate(3deg); }
+  80% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+.promo-img.swing { animation: swing 2.2s ease-in-out infinite alternate; }
+
+/* Shake for Cart Icon */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+.shake { animation: shake 0.5s; }
+
+/* --- Modern Footer & Social Icon Styles (Added by AI) --- */
+.footer-social a {
+  transition: transform 0.2s, color 0.2s, box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #f4f8f2;
+  box-shadow: 0 2px 8px rgba(60, 70, 50, 0.08);
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+.footer-social a:hover {
+  color: #fff !important;
+  background: linear-gradient(135deg, #3a4632 60%, #abc270 100%);
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 6px 20px rgba(60, 70, 50, 0.18);
+}
+footer {
+  background: linear-gradient(120deg, #d6e5c6 60%, #f4f8f2 100%);
+  color: #3a4632;
+  font-family: 'Kanit', 'Nunito', sans-serif;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  box-shadow: 0 -2px 24px rgba(60, 70, 50, 0.08);
+}
+footer .footer-section-title {
+  font-weight: bold;
+  margin-bottom: 14px;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+footer li {
+  margin-bottom: 8px;
+}
+footer input[type="email"] {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: #f4f8f2;
+  box-shadow: 0 1px 4px rgba(60, 70, 50, 0.06);
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+footer input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 2px 12px #abc27055;
+}
+footer button[type="submit"] {
+  background: linear-gradient(135deg, #3a4632 60%, #abc270 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(60, 70, 50, 0.08);
+}
+footer button[type="submit"]:hover {
+  background: linear-gradient(135deg, #abc270 60%, #3a4632 100%);
+  box-shadow: 0 4px 16px #abc27055;
+}
